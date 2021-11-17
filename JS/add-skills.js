@@ -9,7 +9,7 @@ var progLangs = [
     {name: 'Python', idImg: '<img class="icon" src="Images/python-logo.jpg" alt="Python icon">'},
     {name: 'Java', idImg: '<img class="icon" src="Images/java-logo.jpg" alt="Java icon">'},
     {name: 'C', idImg: '<img class="icon" src="Images/c-logo.jpg" alt="C icon">'},
-    {name: 'C++', idImg: '<img class="icon" src="Images/c++-logo.jpg" alt="C++ icon">'}
+    {name: 'C++', idImg: '<img class="icon" src="Images/c-plusplus-logo.jpg" alt="C++ icon">'}
 ];
 
 var frameworks = [
