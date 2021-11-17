@@ -1,0 +1,106 @@
+html { 
+    background: url(../Images/bk.jpg) no-repeat center center fixed;
+    background-color: rgb(75, 8, 75);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+    background-color: white;
+    max-width: 60%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+span {
+    color: purple;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: plum;}
+a:hover {
+    color: greenyellow;}
+a:active {
+    color: rgb(255, 41, 255);}
+fieldset{
+    width: 500px;
+}
+td {
+    vertical-align: top;
+}
+.header {
+    background-color: black;
+    color: white;
+    padding: 2em 2em 2em 1em;
+    border-color: black;
+}
+.content {
+    padding: 0em 2em 2em 2em;
+}
+.code{
+    width: fit-content;
+    padding: 0.5em;
+    background-color: rgb(245, 245, 245);
+    border-style: inset;
+}
+.code2 {
+    padding-left: 1em;
+}
+.icon {
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+    float: right;
+}
+.skill {
+    width: 15em;
+    height: 3em;
+    line-height: 3em;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(217, 205, 218);
+    box-shadow: 0.1em 0.1em rgb(217, 205, 218);
+    background-color: white;
+}
+.project {
+    width: 70%;
+}
+#cv {
+    width:fit-content;
+    float: right;
+    line-height: 1em;
+    vertical-align: middle;
+    border-style: groove;
+    border-radius: 10px;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+#progLangs #frameworks #concepts #other{
+    max-width: 40em;
+    height: 20em;
+    background-color: rgb(231, 231, 231);
+    padding: 0.5em;
+    display: table-cell;
+}
+#socialMedia{
+    display: inline-block;
+}
+#menu {
+    background-color: purple;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: 1em;
+}
+#menu a{
+    padding-right: 2em;
+}
+#scrolling {
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .2em;
+    background-color: plum;
+}

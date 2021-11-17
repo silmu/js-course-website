@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skills</title>
+        <link href="Styles/css-general.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header"><h1>Skills</h1></div>
+        <!--menu-->
+        <div id="menu">
+            <a href="home.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="animation.html">Animation</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <!--content-->
+        <div class="content">
+            <!--download CV-->
+            <div id="cv">
+                <p>Download CV:</p>
+                <a href="Text/CV.pdf" target="_blank" download><img class="icon" src="Images/pdf.jpg" alt="PDF file" /></a>
+                <a href="Text/CV.docx" download><img class="icon" src="Images/doc.jpg" alt="DOCX file"/></a>
+                
+            </div>
+            <!--skills-->
+            <div>
+                <h2>Skills list:</h2>
+                <table>
+                    <tr>
+                        <td><p><b>Programming languages</b></p>
+                        <div id="progLangs"></div></td>
+
+                        <td><p><b>Frameworks</b></p>
+                        <div id="frameworks"></div></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><p><b>Concepts</b></p>
+                        <div id="concepts"></div></td>
+
+                        <td><p><b>Other</b></p>
+                        <div id="other"></div></td>
+                    </tr>
+                </table>
+            </div><br>
+            <!--form-->
+            <fieldset>
+                <legend><b>Add new skill</b></legend>
+                <form>
+                    <label><p>1. Skill name:
+                        <input type="text" id="name" required="required"
+                        value=""/></p></label>
+                    <label><p>2. Skill type:
+                        <select id="type">
+                            <option value="Programming language">Programming
+                                language</option>
+                            <option value="Framework">Framework</option>
+                            <option value="Concept">Concept</option>
+                            <option value="Other">Other</option>
+                        </select></p>
+                    </label>
+                    <input type="button" value="Submit" onclick="addSkill()">
+                </form>
+            </fieldset>
+        </div>
+        <script src="JS/add-skills.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects</title>
+        <link href="Styles/css-general.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header"><h1>Projects</h1></div>
+        <div id="menu">
+            <a href="home.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="animation.html">Animation</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="scrolling">
+            &emsp;Page got scrolled up and down: <span id="scrolls">0</span> times.
+        </div>
+        <div class="content">
+            <!--1st project-->
+            <div id="project1">
+                <h2>1. Z-index</h2>
+                <p>&emsp; When elements are positioned, they can overlap other elements.<br>
+                    The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).<br>
+                    An element can have a positive or negative stack order.<br>
+                    <i>Example:</i><br>
+                    <div class="code">
+                        p {<div class="code2">
+                        position: absolute;<br>
+                        left: 0px;<br>
+                        top: 0px;<br>
+                        z-index: 10;<br></div>
+                            }<br>
+                    </div><br>
+                    This project shows different overlapping div elements. Z-index is increased by 10 for each element.
+                </p>
+                <img src="Images/projects/z-index.jpg" class="project">
+            </div>
+            <hr>
+            <!--2nd project-->
+            <div id="project2">
+                <h2>2. Form</h2>
+                <p>This project combines different input types that can be used in a form.<br><br>
+                    <i>For example:</i><br>
+                    <b>Text Input</b> receives a single line of information.<br>
+                    <div class="code">
+                        <form>
+                        <p>Name:
+                        <input type="text" name="name" size="15" maxlength="30" />
+                        </p>
+                        </form>
+                    </div><br>
+                    <b>Password Input</b> hides the input information.<br><br>
+                    <div class="code">
+                        <form>
+                        <p>Password:
+                        <input type="password" name="password" size="15" maxlength="30" />
+                        </p>
+                    </form>
+                    </div><br>
+                    <b>Radio Button</b> control lets user to select one of the options.<br><br>
+                    <div class="code">
+                        <form>
+                            <p>Color:
+                            <br />
+                        <input type="radio" name="color" value="blue" checked="checked" />Blue
+                        <input type="radio" name="color" value="green" />Green
+                        <input type="radio" name="color" value="red" />Red
+                            </p>
+                        </form>
+                    </div>
+                </p>
+                <img src="Images/projects/form.jpg" class="project">
+            </div>
+            <hr>
+            <!--3rd project-->
+            <div id="project3">
+                <h2>3. Date</h2>
+                <p>This project shows the current date and time with the following code:</p>
+                <div class="code">
+                    &lt;script>
+                        <div class="code2">
+                        var d = new Date();<br>
+                        document.write(`${d.getDate()}/${d.getMonth()}/${d.getFullYear()}`);<br>
+                        document.write(`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);<br>
+                        </div>
+                    &lt;/script>
+                </div>
+                <p>The time is updated every second with the following code added in <head> tag:</p>
+                <div class="code">
+                    &lt;meta http-equiv="refresh" content="1">
+                </div>
+                <img src="Images/projects/clock.jpg" class="project">
+            </div>
+            <hr>
+        </div>
+        <script src="JS/projects.js">
+        </script>
+    </body>
+</html>
