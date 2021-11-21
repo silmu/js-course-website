@@ -33,7 +33,7 @@ var others = [
 //assign value of html elements location to variables 
 var getProgLang = document.getElementById('progLangs');
 var getFrame = document.getElementById('frameworks');
-var getCons = document.getElementById('concepts')
+var getCons = document.getElementById('concepts');
 var getOth = document.getElementById('other');
 
 //call function toPrint to show lists of skills in devoted html elements
