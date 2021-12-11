@@ -51,19 +51,20 @@
             <fieldset>
                 <legend><b>Add new skill</b></legend>
                 <form>
-                    <label><p>1. Skill name:
-                        <input type="text" id="name" required="required"
-                        value=""/></p></label>
-                    <label><p>2. Skill type:
-                        <select id="type">
-                            <option value="Programming language">Programming
-                                language</option>
-                            <option value="Framework">Framework</option>
-                            <option value="Concept">Concept</option>
-                            <option value="Other">Other</option>
-                        </select></p>
-                    </label>
-                    <input type="button" value="Submit" onclick="addSkill()">
+                    <!--Skill name-->
+                    <label><p>1. Skill name:</label>
+                    <input type="text" id="name" required="required" value=""/></p>
+                    <!--Skill type-->
+                    <label><p>2. Skill type:</label>
+                    <select id="type">
+                        <option value="Programming language">Programming
+                            language</option>
+                        <option value="Framework">Framework</option>
+                        <option value="Concept">Concept</option>
+                        <option value="Other">Other</option>
+                    </select></p>
+                    <!--Button-->
+                    <input type="button" class="button-primary" value="Submit" onclick="addSkill()">
                 </form>
             </fieldset>
         </div>
