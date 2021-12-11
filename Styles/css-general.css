@@ -8,7 +8,7 @@ html {
 }
 body{
     background-color: white;
-    max-width: 60%;
+    max-width: 800px;
     margin-top: auto;
     margin-right: auto;
     margin-left: auto;
@@ -26,7 +26,7 @@ a:hover {
 a:active {
     color: rgb(255, 41, 255);}
 fieldset{
-    width: 500px;
+    background-color: white;
 }
 td {
     vertical-align: top;
@@ -49,6 +49,7 @@ td {
 .code2 {
     padding-left: 1em;
 }
+
 .icon {
     width: 2em;
     height: 2em;
