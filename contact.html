@@ -7,6 +7,7 @@
         <title>Contact</title>
         <link href="Styles/css-general.css" type="text/css"
         rel="stylesheet">
+        
     </head>
     <body>
         <div class="header"><h1>Contact</h1></div>
@@ -36,45 +37,55 @@
         <form id="contactMe">
             <fieldset>
                 <legend><b>Send me a message:</b></legend>
-                <label>First Name:<br>
-                    <input type="text" id="firstName" 
-                    maxlength="25"required="required" value=""/>
-                </label><br>
-                <label>Last Name:<br>
-                    <input type="text" id="lastName" 
-                    maxlength="25" required="required" value=""/>
-                </label><br>
-                <label><p>Gender:
-                    <select id="gender">
-                        <option value="female">Female</option>
-                        <option value="male">Male</option>
-                        <option value="other">Other</option>
-                    </p></select><br>
-                </label>
-                <label>Age <i>(you have to be at least 18)</i>:<br>
-                    <input type="number" id="age" 
-                    maxlength="3" min="18" max="100" oninput="(validity.valid)||(value='')" required="required"/>
-                </label><br>
-                <label>Email:<br>
-                    <input type="email" id="email"
-                    maxlength="50" required="required" value=""/>
-                </label><br>
-                <label>Website:<br>
-                    <input type="url" id="website"
-                    maxlength="50" required="required" value=""/>
-                </label><br>
-                <label>Comment:<br>
+                <!--First Name-->
+                <label class="required">First Name:</label><br>
+                <input type="text" id="firstName" maxlength="25" required="required" value=""/>
+                <br>
+
+                <!--Last Name-->
+                <label class="required">Last Name:</label><br>
+                <input type="text" id="lastName" maxlength="25" required="required" value=""/>
+                <br>
+
+                <!--Gender-->
+                <label>Gender:</label>
+                <select id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+                <br>
+
+                <!--Age-->
+                <label class="required">Age <i>(you have to be at least 18)</i>:</label><br>
+                    <input type="number" id="age"maxlength="3" min="18" max="100"
+                    oninput="(validity.valid)||(value='')" required="required"/>
+                <br>
+
+                <!--Email-->
+                <label class="required">Email:</label><br>
+                <input type="email" id="email" maxlength="50" required="required" value=""/>
+                <br>
+
+                <!--Website-->
+                <label class="required">Website:</label><br>
+                <input type="url" id="website" maxlength="50" required="required" value=""/>
+                <br>
+
+                <!--Comment-->
+                <label class="required">Comment:</label><br>
                     <textarea id="comment" cols="50"
                     rows="5" required="required" value=""></textarea>
-                </label>
-                <p><input type="submit" value="Submit"/>
-                <input type="reset" value="Reset"></p>
+                
+                <!--Submit button-->
+                <p><input type="submit" class="button-primary" value="Submit"/>
+                <!--Reset button-->
+                <input type="reset" class="button-secondary" value="Reset"></p>
             </fieldset>
         </form>
         <!--show the input info-->
         <p id="afterMessage"></p>
         </div>
-        <script src="JS/form-action.js">
-        </script>
+        <script src="JS/form-action.js"></script>
     </body>
 </html>
