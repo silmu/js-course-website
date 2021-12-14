@@ -8,10 +8,6 @@ project1.addEventListener('mouseover', function (event) {
             event.target.style.backgroundColor = "";
         }, 1000);
     }, false);
-//event on load
-window.addEventListener('load', function (event) {
-        alert('The page is loaded!');
-    });
 //event on scroll
 var i = 0;
 window.addEventListener('scroll', function (event) {
