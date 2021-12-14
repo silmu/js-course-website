@@ -28,8 +28,36 @@
             <div id ="myContainer">
                 <div id ="myAnimation"></div>
             </div>
+            <br><hr>
+            <!--Form-->
+            <form id="myGraph">
+                <p><b>Loan calculator (interest-only)</b></p>
+                <!--Amount-->
+                <p><label>Amount:</label>
+                <input type="text" id="amount" maxlength="25" value="" />
+                </p>
+                <!--Annual interest-->
+                <p><label>Annual interest(%):</label>
+                <input type="text" id="interest" maxlength="25" value="" />
+                </p>
+                <!--Repayment period-->
+                <p><label>Repayment period (years):</label>
+                <input type="text" id="years" maxlength="25" value="" />
+                </p>
+                <!--Button-->
+                <p><input type="submit" class="button-primary" value="Submit"/></p>
+            </form>
+            <p><b>Results</b></p>
+            <p>Monthly payment: <span id="resultMonthly"></span></p>
+            <p>Total pyment: <span id="resultTotal"></span></p>
+            <p>Total interest: <span id="resultInterest"></span></p>
+
+            <!--Canvas-->
+            <div>
+                <canvas id = "myCanvas" width="500" height="300"></canvas>
+            </div>
         </div>
-        <script src="JS/animation.js">
-        </script>
+        <script src="JS/animation.js"></script>
+        <script src="JS/loan-calculator.js"></script>
     </body>
 </html>
