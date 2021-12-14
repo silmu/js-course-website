@@ -123,6 +123,11 @@ td {
     padding-left: .5em;
     padding-right: .5em;
 }
+
+#myCanvas {
+    border-style: solid;
+    border-width: thin;
+}
 #progLangs #frameworks #concepts #other{
     max-width: 40em;
     height: 20em;
