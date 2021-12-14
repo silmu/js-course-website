@@ -10,11 +10,11 @@ form.addEventListener('submit', function (event) {
         var comment = document.getElementById("comment").value;
 
         document.getElementById('afterMessage').innerHTML = `<hr>
-    <p><b>Thank you for your message!</b></p>
-    <p>${firstName} ${lastName}, (${gender}, ${age} years old).
-    <br>Email: ${email}<br>
-    Website: ${website}<br></p>
-    <p>Your message:<br>"${comment}"</p>`;
-        // stop form submission
+            <p><b>Thank you for your message!</b></p>
+            <p>${firstName} ${lastName}, (${gender}, ${age} years old).
+            <br>Email: ${email}<br>
+            Website: ${website}<br></p>
+            <p>Your message:<br>"${comment}"</p>`;
+        // Prevent empty submission
         event.preventDefault();
     });
