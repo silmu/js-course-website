@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Skills</title>
         <link href="Styles/css-general.css" type="text/css" rel="stylesheet">
     </head>
@@ -19,12 +21,33 @@
         <!--content-->
         <div class="content">
             <!--download CV-->
+            <br>
             <div id="cv">
                 <p>Download CV:</p>
                 <a href="Text/CV.pdf" target="_blank" download><img class="icon" src="Images/pdf.jpg" alt="PDF file" /></a>
                 <a href="Text/CV.docx" download><img class="icon" src="Images/doc.jpg" alt="DOCX file"/></a>
                 
             </div>
+            <!--form-->
+            <fieldset style="width: fit-content;">
+                <legend><b>Add new skill</b></legend>
+                <form>
+                    <!--Skill name-->
+                    <label><p>1. Skill name:</label>
+                    <input type="text" id="name" required="required" value=""/></p>
+                    <!--Skill type-->
+                    <label><p>2. Skill type:</label>
+                    <select id="type">
+                        <option value="Programming language">Programming
+                            language</option>
+                        <option value="Framework">Framework</option>
+                        <option value="Concept">Concept</option>
+                        <option value="Other">Other</option>
+                    </select></p>
+                    <!--Button-->
+                    <input type="button" class="button-primary" value="Submit" onclick="addSkill()">
+                </form>
+            </fieldset>
             <!--skills-->
             <div>
                 <h2>Skills list:</h2>
@@ -47,26 +70,6 @@
                     </tr>
                 </table>
             </div><br>
-            <!--form-->
-            <fieldset>
-                <legend><b>Add new skill</b></legend>
-                <form>
-                    <!--Skill name-->
-                    <label><p>1. Skill name:</label>
-                    <input type="text" id="name" required="required" value=""/></p>
-                    <!--Skill type-->
-                    <label><p>2. Skill type:</label>
-                    <select id="type">
-                        <option value="Programming language">Programming
-                            language</option>
-                        <option value="Framework">Framework</option>
-                        <option value="Concept">Concept</option>
-                        <option value="Other">Other</option>
-                    </select></p>
-                    <!--Button-->
-                    <input type="button" class="button-primary" value="Submit" onclick="addSkill()">
-                </form>
-            </fieldset>
         </div>
         <script src="JS/add-skills.js">
         </script>
