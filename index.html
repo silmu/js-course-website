@@ -20,11 +20,11 @@
         </div>
         <!--content-->
         <div class="content">
-            <header><h2>About me</h2></header>
-            <section>
-                <p align="right" style="margin-right: 1em;"><span><i>S.Raitina</i></span></p>
-                <img src="Images/profile.jpg" alt="My profile"
-                width="120px" height="120px" align="left" style="margin-right: 1em;"/>
+            <!--<p align="right" style="margin-right: 1em;"><span><i>S.Raitina</i></span></p>-->
+            <img src="Images/profile.jpg" alt="My profile" width="120px" height="120px" align="left" style="margin-right: 1em;"/>
+            <h4 id="about">About me ▾</h4>
+            <hr>
+            <section id="toggleAbout">
                 <p>&emsp; I have always been interested in how web,
                     mobile and computer applications work. My main
                     interests varied from curiosity about the code
@@ -48,8 +48,10 @@
                     started learning Finnish and thinking about changing my
                     career to web development.
                 </p>
-            <section>
-            <section><h4>Education and skills</h4>
+            </section>
+            <h4 id="education">Education and skills ▾</h4>
+            <hr>
+            <section id="toggleEducation">
                 <p>Firstly, I took courses in the Open University of Helsinki:</p>
                 <ul class="d-inline-block text-truncate" style="max-width: 500px;">
                     <li><a href="https://tkt-lapio.github.io/en/" target="_blank">"Computing Tools for CS Studies" (1op).</a></li>
@@ -97,7 +99,9 @@
                     my at home server.
                 </p>
             </section>
-            <section><h4>Career plan:</h4>
+            <h4 id="career">Career plan: ▾</h4>
+            <hr>
+            <section id="toggleCareer">
             <p>&emsp; I plan to focus on a career as a Full Stack Web Developer after I improve
                 my skills in JS, PHP and learn about the necessary frameworks and platforms. Additionally,
                 I would like to build my own portfolio to show my competence as a Web Developer. For this
@@ -109,7 +113,7 @@
             <div id="time"><b>Time:</b> </div>
             <div id="date"><b>Date:</b> </div>
         </div>
-        <script src="JS/date-and-time.js">
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="JS/index.js"></script>
     </body>
 </html>
